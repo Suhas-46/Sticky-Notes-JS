@@ -1,0 +1,69 @@
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#noteinput{
+    width: 400px;
+    height:150px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 12px;
+    border:2px solid #ccc;
+    margin-bottom: 20px; /*space above the button*/
+    display:block;
+    outline:none;
+    resize: none; /*used becoz browser can't pull into the corner*/
+}
+
+#addbtn{
+    padding: 12px 32px; /*12 indicates left&right space while 32 indicates top&bottom*/
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #007bff;
+    border:none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    transform: 0.2s;
+}
+#addbtn:hover{
+    background-color: #0056b3;
+}
+#addbtn:active{
+    transform:scale(0.95);
+}
+
+#noteswall{
+    display: flex;
+    flex-wrap: wrap; /*this makes items move to nextline instead of squishing*/
+    gap:24px; /*gap b/w items*/
+    margin:100px;
+}
+
+.note-card{
+    width:200px;
+    min-height: 200px;
+    padding: 15px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.1);
+    position: relative; /*to move elements to L-R-T-B
+    word-wrap:break-word; /*used to break the word at point and wrap it to next line*/
+}
+
+.del-btn{
+    background: rgba(0,0,0,0.1);
+    border: none;
+    cursor: pointer;
+    padding:5px;
+    font-size: 12px;
+}
+
+.del-btn:hover{
+    background: rgba(255,0,0,0.2);
+}
+
+body{
+    
+    background-color: rgb(187, 119, 77);
+}
